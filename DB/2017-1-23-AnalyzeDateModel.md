@@ -32,10 +32,13 @@ items：   | 商品表-记录了商品信息
 表名 | 非空字段 | 外键字段
 -------- | -------- | --------
 users：  | id(自增主键),username | 无
-orders： | id(自增主键),number(订单号),user_id,createtime  | user_id
+orders： | id(自增主键),number(订单号),users_id,createtime  | users_id
 orderdetails：  |  id(自增主键),orders_id,items_id  | orders_id,items_id
 items：   | id(自增主键),name,price  | 无
 
-
-
+#### 表与表之间的外键关系
+	
+	外键所在的表叫做子表，外键指向的表为父表。 
+	
+	
 
