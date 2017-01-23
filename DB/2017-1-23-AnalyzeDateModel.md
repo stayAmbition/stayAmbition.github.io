@@ -15,7 +15,7 @@
 #### 如何了解项目每张表? 通过powerdesigner给出的PDF或者数据库表的注释	
 	
 表名 | 意义
---------- | -----------
+----------- | -----------
 users：  | 用户表-记录购买商品的用户信息(终端的用户表，不是后台管理系统的users表)   
 orders： | 订单表-记录用户所创建的订单   
 orderdetails：  | 订单明细表-记录了订单的详细信息即购买商品的信息   
@@ -36,6 +36,8 @@ items：   | 商品表-记录了商品信息  
 | ---------- | -----------|
 | 表格单元   | 表格单元   |
 | 表格单元   | 表格单元   |
+
+
 README
 ===========================
 该文件用来测试和展示书写README的各种markdown语法。GitHub的markdown语法在标准的markdown语法基础上做了扩充，称之为`GitHub Flavored Markdown`。简称`GFM`，GFM在GitHub上有广泛应用，除了README文件外，issues和wiki均支持markdown语法。
