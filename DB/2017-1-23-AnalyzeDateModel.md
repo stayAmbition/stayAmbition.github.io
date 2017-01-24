@@ -40,5 +40,31 @@ items：   | id(自增主键),name,price  | 无
 	
 	外键所在的表叫做子表，外键指向的表为父表。 
 	
+	users<---[users_id]---orders<---[orders_id]---orderdetails---[items_id]--->items
 	
+#### 表与表之间的业务关系 
+	
+##### 先分析数据级别由关系的表之间的业务关系
+	
+	users和orders
+	users--->orders  一个用户可以创建多个订单，一对多
+	orders--->users  一个订单只由一个用户来创建,一对一。如果换个说法，多个订单可以由一个用户来创建，多对一
+	
+	orders和orderdetails
+	orders--->orderdetails  一个订单可以包括多个订单明细，因为一个订单可以购买多个商品，每个商品的购买信息在orderdetails里记录,一对多
+	orderdetails--->orders  一个订单明细只能包括在一个订单里，一对一
+	
+	orderdetails--->items   一个订单明细只对应一个商品明细，一对一
+	items--->orderdetails   一个商品可以包括在多个订单明细中，一对多
+	
+##### 再分析数据库级别没有关系的表之间是否有业务关系 
+
+	orders和items之间通过orderdetails之间建立关系
+	orders--->items 一对多
+	items--->orders 一对多
+	orders和items是多对多关系
+	
+	同理users与items是多对多关系
+	
+
 
