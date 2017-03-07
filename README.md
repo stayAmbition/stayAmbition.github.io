@@ -13,3 +13,4 @@
 ## PHP要点
 
 [PHP变量](/PHP/2017-3-6-PHPVar.md)   
+[PHP7新特性](/PHP/2017-3-7-PHP7.md)   
